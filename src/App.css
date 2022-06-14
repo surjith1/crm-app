@@ -1,38 +1,104 @@
-.App {
+.top-header a {
+  color:#fff;
+  
+}
+a {
+  text-decoration: none;
+}
+.registration-fm {
+  padding: 10px;
+}
+.form-group {
+  margin: 2rem;
+}
+.form-group.btn {
+  display: flex;
+  justify-content: space-between;
+}
+p.forgot-psw {
+  font-size: 20px;
+  font-weight: bold;
+  color: #06c;
+}
+
+.da-top-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.da-top-sec h2 + span {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.refresh-icon svg {
+  font-size: 2rem;
+}
+.ds-item {
+  margin: 0 16px;
+}
+.ds-item-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 10px;
+}
+.ds-item p {
+    padding: 1rem;
+}
+.ds-item p:first-child {
+  font-size: 32px;
+}
+.ds-item p:last-child {
+  display: flex;
+    justify-content: center;
+}
+.ds-item p:last-child svg {
+  width: 40px;
+  height: 40px;
+}
+.ds-item.one >.MuiPaper-elevation {
+  background-color: darkgoldenrod;
+  color:#fff
+}
+.ds-item.two >.MuiPaper-elevation {
+  background-color: blueviolet;
+  color:#fff
+}
+.ds-item.three >.MuiPaper-elevation {
+  background-color: darkblue;
+  color:#fff
+}
+.today-leads h2 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dash-board header button + button {
+  margin-left: 1rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lead-sec img {
+  height: 300px;
+  object-fit: fill;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lead-item-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+}
+.lead-item {
+  margin: 20px;
+  max-width: 450px;
+}
+p.icon-text {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  color: #000;
+  font-size: 16px;
 }
-
-.App-link {
-  color: #61dafb;
+.css-h93ljk-MuiTypography-root {
+  color:#000;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+  box-shadow: 0px 2px 9px 4px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%) !important;
+}
+.dash-board header {
+  margin-bottom: 1rem;
 }
