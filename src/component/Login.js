@@ -50,7 +50,6 @@ const Login = () => {
         }
     })
     const storeToken=(token)=> {
-        //http://localhost:4000/users/login
     
     const user={
       username: username,
@@ -60,7 +59,7 @@ const Login = () => {
       usertype:usertype
     }
     console.log(user);
-    fetch("http://localhost:4000/crm/login", {
+    fetch("https://crm-application-server.herokuapp.com/crm/login", {
       method:"POST",
       body:JSON.stringify(user),
       headers: {

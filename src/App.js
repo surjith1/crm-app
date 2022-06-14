@@ -26,9 +26,9 @@ function App() {
     <Route path="/forgotpassword" element={<ForgotPassword />} />
     <Route path="/reset-password" element={<ResetPassword />} />
     <Route path="/dashboard" element={
-      <RequireToken>
+     
       <Dashboard /> 
-      </RequireToken>} />
+     } />
       <Route path="/leads" element={<Leads />} />
     </Routes>
     </BrowserRouter>
@@ -52,7 +52,6 @@ const Login = () => {
 
     
     const storeToken=(token)=> {
-        //http://localhost:4000/users/login
     
     const user={
       username: username,
@@ -62,7 +61,7 @@ const Login = () => {
       usertype:usertype
     }
     console.log(user);
-    fetch("http://localhost:4000/crm/login", {
+    fetch("https://crm-application-server.herokuapp.com/crm/login", {
       method:"POST",
       body:JSON.stringify(user),
       headers: {
@@ -134,7 +133,6 @@ const ForgotPassword = ()=> {
 
   const storeToken=(e)=> {
     e.preventDefault();
-    //http://localhost:4000/users/login
 
 const user={
   username: username,
@@ -183,7 +181,7 @@ const ResetPassword = ()=> {
     password:password,
   }
   const resetSubmit =()=> {
-    fetch("http://localhost:4000/crm/forgot-password", {
+    fetch("https://crm-application-server.herokuapp.com/crm/forgot-password", {
       method:"POST",
       body:JSON.stringify(user),
       headers: {

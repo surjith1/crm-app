@@ -13,7 +13,7 @@ const Leads = () => {
     const navigate= useNavigate();
     const [leads,setLeads]=useState([]);
     useEffect (()=>{
-      fetch("http://localhost:4000/crmdetails")
+      fetch("https://crm-application-server.herokuapp.com/crmdetails")
       .then((res)=> res.json())
       .then((ld)=>setLeads(ld))
     },[])

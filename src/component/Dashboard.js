@@ -28,7 +28,7 @@ const Dashboard = () => {
     { label: 'Employee' }
   ];
   useEffect(()=>{
-    fetch("http://localhost:4000/crmdetails")
+    fetch("https://crm-application-server.herokuapp.com/crmdetails")
     .then((res)=> res.json())
     .then((ld)=>setLeads(ld))
   },[])

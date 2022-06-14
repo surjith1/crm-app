@@ -39,7 +39,7 @@ const Registration = () => {
         }
     })
     const registerUser=(user)=> {
-        fetch("http://localhost:4000/crm/registration", {
+        fetch("https://crm-application-server.herokuapp.com/crm/registration", {
           method: "POST",
           body: JSON.stringify(user),
           headers: {
